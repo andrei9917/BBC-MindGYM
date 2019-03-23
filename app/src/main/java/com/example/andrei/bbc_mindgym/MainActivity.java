@@ -91,11 +91,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_alarm) {
-
+            this.openAlarmTab();
         } else if (id == R.id.nav_calendar) {
 
         } else if (id == R.id.nav_todolist) {
-
+            this.openTodoTab();
         } else if (id == R.id.nav_trackedapps) {
 
         } else if (id == R.id.nav_workouts){
@@ -108,5 +108,13 @@ public class MainActivity extends AppCompatActivity
     }
     public void openWorkoutsTab(){
         startActivity(new Intent(MainActivity.this, WorkoutsActivity.class));
+    }
+
+    public void openAlarmTab() {
+        startActivity(new Intent(MainActivity.this, AlarmActivity.class));
+    }
+
+    public void openTodoTab() {
+        startActivity(new Intent(MainActivity.this, TodoActivity.class));
     }
 }
