@@ -1,5 +1,6 @@
 package com.example.andrei.bbc_mindgym;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_trackedapps) {
 
         } else if (id == R.id.nav_workouts){
-
+            this.openWorkoutsTab();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -97,6 +98,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
     public void openWorkoutsTab(){
-        
+        startActivity(new Intent(MainActivity.this, WorkoutsActivity.class));
     }
 }
