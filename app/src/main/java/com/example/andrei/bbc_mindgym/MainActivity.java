@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity
             this.openTrackTab();
         } else if (id == R.id.nav_workouts){
             this.openWorkoutsTab();
+        } else if (id == R.id.nav_quizzes){
+            this.openQuizzesTab();
         } else if (id == R.id.nav_games) {
             this.openGamesTab();
         }
@@ -129,7 +131,12 @@ public class MainActivity extends AppCompatActivity
         startActivity(new Intent(MainActivity.this, TrackActivity.class));
     }
 
+
+    public void openQuizzesTab(){
+        startActivity(new Intent(MainActivity.this, QuizzesActivity.class));
+
     public void openGamesTab() {
         startActivity(new Intent(MainActivity.this, GamesActivity.class));
+
     }
 }
