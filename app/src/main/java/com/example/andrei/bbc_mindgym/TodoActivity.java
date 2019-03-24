@@ -28,8 +28,9 @@ public class TodoActivity extends AppCompatActivity {
         button = findViewById(R.id.floatingActionButton);
         text = findViewById(R.id.textInputLayout);
         itemlist = new ArrayList<>();
-        itemlist.add("Grocery run");
-        itemlist.add("Read");
+        itemlist.add("Get groceries");
+        itemlist.add("Read at least 10 pages");
+        itemlist.add("Go for a run");
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemlist);
         lv.setAdapter(arrayAdapter);
 
@@ -47,12 +48,6 @@ public class TodoActivity extends AppCompatActivity {
                 !text.getEditText().getText().toString().equals(" ")){
             String toDoStr = text.getEditText().getText().toString();
             itemlist.add(toDoStr);
-
-
-            itemlist.indexOf(toDoStr);
-
-
-
             text.getEditText().setText("");
             arrayAdapter.notifyDataSetChanged();}
     }

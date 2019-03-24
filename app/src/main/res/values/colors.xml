@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#b042f4</color>
+    <color name="light_grey">#64459A</color>
     <color name="colorPrimaryDark">#64459A</color>
     <color name="colorAccent">#2c4689</color>
     <color name="grey_bg">#aaaaaa</color>
-    <color name="light_grey">#dadada</color>
+
+    <!-- <color name="light_grey">#dadada</color> -->
 </resources>

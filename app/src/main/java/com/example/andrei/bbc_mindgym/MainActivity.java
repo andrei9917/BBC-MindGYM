@@ -137,6 +137,5 @@ public class MainActivity extends AppCompatActivity
     }
     public void openGamesTab() {
         startActivity(new Intent(MainActivity.this, GamesActivity.class));
-
     }
 }

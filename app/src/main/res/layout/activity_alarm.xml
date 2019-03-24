@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_bg"
     tools:context=".AlarmActivity">
 
     <Switch
+        android:textColor="@color/light_grey"
         android:id="@+id/switch_monday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
+        android:textColor="@color/light_grey"
         android:id="@+id/switch_tuesday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,6 +36,7 @@
         tools:layout_editor_absoluteX="8dp" />
 
     <Switch
+        android:textColor="@color/light_grey"
         android:id="@+id/switch_wednesday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,6 +50,7 @@
         tools:layout_editor_absoluteX="8dp" />
 
     <Switch
+        android:textColor="@color/light_grey"
         android:id="@+id/switch_thursday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,6 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/switch_wednesday" />
 
     <Switch
+        android:textColor="@color/light_grey"
         android:id="@+id/switch_friday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,11 +85,13 @@
         android:paddingStart="48dp"
         android:text="Saturday"
         android:textAlignment="textStart"
+        android:textColor="@color/light_grey"
         android:textSize="28sp"
         app:layout_constraintTop_toBottomOf="@+id/switch_friday"
         tools:layout_editor_absoluteX="16dp" />
 
     <Switch
+        android:textColor="@color/light_grey"
         android:id="@+id/switch_sunday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -108,7 +116,7 @@
         android:fontFamily="@font/cabin"
         android:text="Set wake-up"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/light_grey"
         android:textSize="64sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

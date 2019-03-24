@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cabin"
-            android:hint="enter here"
+            android:hint="Set a reminder"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
