@@ -81,7 +81,8 @@
         <activity
             android:name=".QuizzesActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+                  android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -90,6 +91,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <meta-data
             android:name="preloaded_fonts"
