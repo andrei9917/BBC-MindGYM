@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -26,6 +25,10 @@
             android:actionLayout="@layout/activity_workouts"
             android:icon="@mipmap/ic_bicep"
             android:title="Workouts" />
+        <item
+            android:id="@+id/nav_games"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Games" />
     </group>
 
 </menu>
