@@ -36,25 +36,44 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".GameActivity5"
+            android:label="Fifth Game"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".GameActivity4"
+            android:label="Fourth Game"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".GameActivity3"
+            android:label="Third Game"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".GameActivity2"
+            android:label="Second Game"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".GameActivity1"
+            android:label="First Game"
+            android:parentActivityName=".GamesActivity" />
+        <activity
             android:name=".GamesActivity"
-            android:label="@string/title_activity_games"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.andrei.bbc_mindgym.MainActivity" />
-        </activity>
+            android:label="Games"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TrackActivity"
+            android:label="App Tracker"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CalendarActivity"
+            android:label="Calendar"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TodoActivity"
+            android:label="Todo List"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AlarmActivity"
+            android:label="Alarms"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".WorkoutsActivity"
@@ -68,8 +87,11 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
