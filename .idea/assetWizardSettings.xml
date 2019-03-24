@@ -77,7 +77,7 @@
                                     <map>
                                       <entry key="backgroundColor" value="ffffff" />
                                       <entry key="backgroundLayerName" value="white_bg" />
-                                      <entry key="foregroundImage" value="C:\Users\tomato\Downloads\Telegram Desktop\logo_BRAIN_transparent.png" />
+                                      <entry key="foregroundImage" value="C:\Users\tomato\Downloads\Telegram Desktop\name_transparent.png" />
                                       <entry key="foregroundLayerName" value="ic_mind_brain_logo" />
                                       <entry key="outputName" value="ic_mind_logo" />
                                       <entry key="showGrid" value="true" />
@@ -97,11 +97,32 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="C:\Users\tomato\Downloads\Telegram Desktop\name_transparent.png" />
+                                      <entry key="outputName" value="ic_launcher_final" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -145,6 +166,11 @@
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
