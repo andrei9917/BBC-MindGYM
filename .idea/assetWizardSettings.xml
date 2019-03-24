@@ -75,11 +75,12 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="white_bg" />
-                                      <entry key="foregroundImage" value="C:\Users\tomato\Downloads\Telegram Desktop\name_transparent.png" />
+                                      <entry key="backgroundLayerName" value="white_bg_2" />
+                                      <entry key="foregroundImage" value="C:\Users\tomato\Downloads\Telegram Desktop\logo_BRAIN_transparent.png" />
                                       <entry key="foregroundLayerName" value="ic_mind_brain_logo" />
-                                      <entry key="outputName" value="ic_mind_logo" />
+                                      <entry key="outputName" value="ic_mind_logo_final_23" />
                                       <entry key="showGrid" value="true" />
                                     </map>
                                   </option>
@@ -166,11 +167,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
