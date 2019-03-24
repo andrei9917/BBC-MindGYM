@@ -101,6 +101,8 @@ public class MainActivity extends AppCompatActivity
             this.openTrackTab();
         } else if (id == R.id.nav_workouts){
             this.openWorkoutsTab();
+        } else if (id == R.id.nav_quizzes){
+            this.openQuizzesTab();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -136,5 +138,9 @@ public class MainActivity extends AppCompatActivity
 
     public void openTrackTab() {
         startActivity(new Intent(MainActivity.this, TrackActivity.class));
+    }
+
+    public void openQuizzesTab(){
+        startActivity(new Intent(MainActivity.this, QuizzesActivity.class));
     }
 }
