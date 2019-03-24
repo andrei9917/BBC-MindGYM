@@ -28,6 +28,8 @@ public class TodoActivity extends AppCompatActivity {
         button = findViewById(R.id.floatingActionButton);
         text = findViewById(R.id.textInputLayout);
         itemlist = new ArrayList<>();
+        itemlist.add("Grocery run");
+        itemlist.add("Read");
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemlist);
         lv.setAdapter(arrayAdapter);
 
