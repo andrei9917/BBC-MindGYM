@@ -12,12 +12,20 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".TrackActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CalendarActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".TodoActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AlarmActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".WorkoutsActivity" />
+        <activity
+            android:name=".WorkoutsActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

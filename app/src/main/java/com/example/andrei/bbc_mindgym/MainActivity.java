@@ -1,6 +1,7 @@
 package com.example.andrei.bbc_mindgym;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -93,11 +94,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_alarm) {
             this.openAlarmTab();
         } else if (id == R.id.nav_calendar) {
-
+            this.openCalendarTab();
         } else if (id == R.id.nav_todolist) {
             this.openTodoTab();
         } else if (id == R.id.nav_trackedapps) {
-
+            this.openTrackTab();
         } else if (id == R.id.nav_workouts){
             this.openWorkoutsTab();
         }
@@ -116,5 +117,24 @@ public class MainActivity extends AppCompatActivity
 
     public void openTodoTab() {
         startActivity(new Intent(MainActivity.this, TodoActivity.class));
+    }
+
+    public void openCalendarTab() {
+        //
+        // startActivity(new Intent(MainActivity.this, CalendarActivity.class));
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.android.calendar");
+        if (launchIntent != null) {
+            startActivity(launchIntent);//null pointer check in case package name was not found
+        } else {
+            // Bring user to the market or let them choose an app?
+            launchIntent = new Intent(Intent.ACTION_VIEW);
+            launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            launchIntent.setData(Uri.parse("market://details?id=" + "com.google.android.calendar"));
+            startActivity(launchIntent);
+        }
+    }
+
+    public void openTrackTab() {
+        startActivity(new Intent(MainActivity.this, TrackActivity.class));
     }
 }
