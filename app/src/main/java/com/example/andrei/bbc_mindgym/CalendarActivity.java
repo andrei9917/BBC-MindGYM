@@ -2,12 +2,19 @@ package com.example.andrei.bbc_mindgym;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.CalendarView;
 
-public class WorkoutsActivity extends AppCompatActivity {
+
+public class CalendarActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workouts);
+        setContentView(R.layout.activity_calendar);
+
+        CalendarView calendarView = findViewById(R.id.calendarView);
+
+
     }
 }
