@@ -1,8 +1,8 @@
 package com.example.andrei.bbc_mindgym;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -72,10 +72,10 @@ public class QuizzesActivity extends AppCompatActivity {
         repo.add(new Question("What is the bulgarian currency?", "Bulgarian dollar", "Franc", "Leva", "c"));
         repo.add(new Question("Who invented the light bulb?", "Thomas Edison", "Nicola Tesla", "Petrache Poenaru", "a"));
         repo.add(new Question("What river runs through Bucharest?", "Dunarea", "Siret", "Dambovita", "c"));
-        repo.add(new Question("What's the capital of Iceland?", "Iceland", "Oslo", "Reyjavik", "c"));
+        repo.add(new Question("What's the capital of Iceland?", "Iceland", "Oslo", "Reykjavik", "c"));
         repo.add(new Question("How many states are in USA?", "55", "45", "50", "c"));
-        repo.add(new Question("What's the capital of England?", "Rusia", "London", "Chisinau", "b"));
-        repo.add(new Question("Where was Adolf Hitler Born?", "Austria", "Germania", "Polonia", "a"));
+        repo.add(new Question("What's the capital of England?", "Russia", "London", "Chisinau", "b"));
+        repo.add(new Question("Where was Adolf Hitler Born?", "Austria", "Germany", "Poland", "a"));
         repo.add(new Question("When did the second world (WWII) end?", "1944", "1945", "1946", "b"));
         repo.add(new Question("How long was the 100 years war?", "100 years", "96 years", "116 years", "c"));
         repo.add(new Question("How much is 2+2-1 ?", "3 quick maths", "5", "4", "a"));
@@ -112,14 +112,48 @@ public class QuizzesActivity extends AppCompatActivity {
 
     public void evaluateAnswer(String ans){
         if (currentQuestion.getCorrect().equals(ans)){
-            buttonA.setBackgroundResource(R.drawable.background_green);
-            buttonB.setBackgroundResource(R.drawable.background_green);
-            buttonC.setBackgroundResource(R.drawable.background_green);
+            switch (ans) {
+                case "a":
+                    buttonA.setBackgroundResource(R.drawable.background_green);
+                    break;
+                case "b":
+                    buttonB.setBackgroundResource(R.drawable.background_green);
+                    break;
+                case "c":
+                    buttonC.setBackgroundResource(R.drawable.background_green);
+                    break;
+            }
+
+            //buttonA.setBackgroundResource(R.drawable.background_green);
+            //buttonB.setBackgroundResource(R.drawable.background_green);
+            //buttonC.setBackgroundResource(R.drawable.background_green);
         }
         else {
-            buttonA.setBackgroundResource(R.drawable.background_red);
-            buttonB.setBackgroundResource(R.drawable.background_red);
-            buttonC.setBackgroundResource(R.drawable.background_red);
+            switch (ans) {
+                case "a":
+                    buttonA.setBackgroundResource(R.drawable.background_red);
+                    break;
+                case "b":
+                    buttonB.setBackgroundResource(R.drawable.background_red);
+                    break;
+                case "c":
+                    buttonC.setBackgroundResource(R.drawable.background_red);
+                    break;
+            }
+            switch (currentQuestion.getCorrect()) {
+                case "a":
+                    buttonA.setBackgroundResource(R.drawable.background_green);
+                    break;
+                case "b":
+                    buttonB.setBackgroundResource(R.drawable.background_green);
+                    break;
+                case "c":
+                    buttonC.setBackgroundResource(R.drawable.background_green);
+                    break;
+            }
+            //buttonA.setBackgroundResource(R.drawable.background_red);
+            //buttonB.setBackgroundResource(R.drawable.background_red);
+            //buttonC.setBackgroundResource(R.drawable.background_red);
         }
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
