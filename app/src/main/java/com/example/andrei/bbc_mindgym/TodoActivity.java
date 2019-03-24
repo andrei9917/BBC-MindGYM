@@ -33,6 +33,7 @@ public class TodoActivity extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemlist);
         lv.setAdapter(arrayAdapter);
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +47,12 @@ public class TodoActivity extends AppCompatActivity {
                 !text.getEditText().getText().toString().equals(" ")){
             String toDoStr = text.getEditText().getText().toString();
             itemlist.add(toDoStr);
+
+
+            itemlist.indexOf(toDoStr);
+
+
+
             text.getEditText().setText("");
             arrayAdapter.notifyDataSetChanged();}
     }

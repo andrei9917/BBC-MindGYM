@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_bg"
     tools:context=".TodoActivity">
 
     <ListView
@@ -13,6 +14,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:foregroundTint="@color/light_grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,13 +25,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/light_grey"
         app:layout_constraintTop_toBottomOf="@+id/listView">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cabin"
-            android:hint="enter here"
+            Kandroid:hint="enter here"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
@@ -39,7 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:focusable="true"
         android:clickable="true"
+        android:tint="@color/light_grey"
         android:focusableInTouchMode="false"
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
