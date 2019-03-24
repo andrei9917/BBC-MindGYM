@@ -40,7 +40,7 @@ public class TodoActivity extends AppCompatActivity {
     }
 
     public void addToList(){
-        if(!text.getEditText().getText().toString().equals("") ||
+        if(!text.getEditText().getText().toString().equals("") &&
                 !text.getEditText().getText().toString().equals(" ")){
             String toDoStr = text.getEditText().getText().toString();
             itemlist.add(toDoStr);
