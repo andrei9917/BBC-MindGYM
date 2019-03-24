@@ -132,9 +132,9 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public void openQuizzesTab(){
+    public void openQuizzesTab() {
         startActivity(new Intent(MainActivity.this, QuizzesActivity.class));
-
+    }
     public void openGamesTab() {
         startActivity(new Intent(MainActivity.this, GamesActivity.class));
 
